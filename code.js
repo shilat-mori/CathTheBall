@@ -9,20 +9,6 @@ document.addEventListener("keydown", moveGamer);
 
 
 function load_game() {
-  // let tr, td;
-  // //create rows
-  // for (let i = 0; i < 10; i++) {
-  //   tr = document.createElement("tr");
-
-  //   // Generate cells
-  //   for (let j = 0; j < 10; j++) {
-  //     td = document.createElement("td")
-  //     tr.appendChild(td)
-  //     td.id = "cell" + (i * 10 + j)
-  //     td.class="cell"
-  //     }
-  //     document.getElementById("board").appendChild(tr);
-  // }
 
   let doors = [4, 50, 95, 49]
 
