@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body onload="load_game()">
+    <div class="container text-center">
+      <h1 class="my-4">catch the ball</h1>
+      <table class="table table-bordered">
+        <tbody id="board">
+          <!-- Generate rows -->
+          <script>
+            for (let i = 0; i < 10; i++) {
+              document.write("<tr>");
+              // Generate cells
+              for (let j = 0; j < 10; j++) {
+                document.write('<td class="cell" id="cell'+(i*10+j)+'" ></td>');
+              }
+              document.write("</tr>");
+            }
+          </script>
+        </tbody>
+      </table>
+      <button class="btn" onclick="restart()">Restart</button>
+
+    </div>
+  </body>
+  <script src="code.js"></script>
+  <link
+      rel="stylesheet"
+      href="../bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+</html>
